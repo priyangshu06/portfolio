@@ -15,128 +15,318 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <a class="logo" href="#top">PD<span>.</span></a>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <a class="nav-resume" href="resume.pdf" target="_blank">
+        Résumé ↗
+        </a>
     </nav>
-    <h1>Hi, I'm Priyangshu</h1>
-    <h2>Software Developer</h2>
-    <img class="profile-photo" src="profile.jpg" alt="Priyangshu Debnath">
-    <p>I am a software developer passionate about building modern,
-  useful, and user-friendly web applications.</p>
-    <a class="button" href="#projects">View My Projects</a>
-    <a class="resume-button" href="resume.pdf" target="_blank">
-        View My Résumé
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-label">SOFTWARE DEVELOPER · FULL-STACK · AI</p>
+
+            <h1>
+                Building thoughtful<br>
+                <span>digital experiences.</span>
+            </h1>
+
+            <p class="hero-description">
+                Hi, I’m Priyangshu — a software developer focused on modern,
+                scalable web applications and AI-powered solutions.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button" href="#projects">View My Work</a>
+                <a class="hero-link" href="resume.pdf" target="_blank">
+                    Download Résumé ↓
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image-wrap">
+            <img class="hero-image" src="profile.jpg" alt="Priyangshu Debnath">
+            <div class="hero-badge">Open to work<br><span>2026</span></div>
+        </div>
+</header>
+    <section id="about" class="about-section">
+  <div class="about-copy">
+    <p class="section-label">ABOUT ME</p>
+
+    <h2>Curious, practical, and always building.</h2>
+
+    <p>
+      I am a software developer interested in full-stack web development,
+      AI, and data-driven applications. I enjoy turning ideas into clear,
+      useful, and reliable digital experiences.
+    </p>
+
+    <p>
+      My current toolkit includes TypeScript, React, Next.js, Node.js,
+      Express.js, MongoDB, Python, and Git.
+    </p>
+
+    <a class="about-resume" href="resume.pdf" target="_blank">
+      View my résumé <span>↗</span>
     </a>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-           I am a software developer with an interest in full-stack web
-           development, artificial intelligence, and building useful digital
-           products. I work with technologies such as React, Next.js, Node.js,
-           Python, and MongoDB.
+  </div>
+
+  <div class="about-highlights">
+    <div class="highlight-card">
+      <span>01</span>
+      <h3>Full-Stack Development</h3>
+      <p>Building interfaces, APIs, databases, and complete web applications.</p>
+    </div>
+
+    <div class="highlight-card">
+      <span>02</span>
+      <h3>AI & Data</h3>
+      <p>Exploring machine learning, data analysis, NLP, and generative AI.</p>
+    </div>
+
+    <div class="highlight-card">
+      <span>03</span>
+      <h3>Modern Web</h3>
+      <p>Creating responsive, accessible, and user-focused web experiences.</p>
+    </div>
+  </div>
+</section>
+    <section id="what-i-do" class="focus-section">
+  <div class="focus-header">
+    <p class="focus-label">HOW I CAN CONTRIBUTE</p>
+    <h2>From idea to<br><span>working product.</span></h2>
+  </div>
+
+  <div class="focus-grid">
+    <article class="focus-card">
+      <span>01</span>
+      <h3>Build Interfaces</h3>
+      <p>
+        Responsive, accessible, and modern frontend experiences using
+        React, Next.js, TypeScript, HTML, and CSS.
+      </p>
+    </article>
+
+    <article class="focus-card">
+      <span>02</span>
+      <h3>Create APIs</h3>
+      <p>
+        Backend services and REST APIs with Node.js, Express.js,
+        MongoDB, and thoughtful data structures.
+      </p>
+    </article>
+
+    <article class="focus-card">
+      <span>03</span>
+      <h3>Explore AI</h3>
+      <p>
+        Practical AI, machine learning, NLP, and data-analysis
+        solutions that solve useful real-world problems.
+      </p>
+    </article>
+  </div>
+</section>
+    <section id="skills" class="skills-section">
+  <p class="section-label">TECHNICAL SKILLS</p>
+  <h2>Tools I work with.</h2>
+  <p class="section-intro">
+    A practical toolkit for building full-stack web applications,
+    working with APIs, and exploring AI-powered solutions.
+  </p>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <div class="skill-tags">
+        <span>TypeScript</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>C</span>
+        <span>SQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Frontend</h3>
+      <div class="skill-tags">
+        <span>React.js</span>
+        <span>Next.js</span>
+        <span>Tailwind CSS</span>
+        <span>Responsive Design</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Backend</h3>
+      <div class="skill-tags">
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>REST APIs</span>
+        <span>Mongoose</span>
+        <span>MongoDB</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>AI & Data</h3>
+      <div class="skill-tags">
+        <span>Machine Learning</span>
+        <span>Generative AI</span>
+        <span>NLP</span>
+        <span>Data Science</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+      </div>
+    </div>
+
+    <div class="skill-card skill-card-wide">
+      <h3>Tools & Development</h3>
+      <div class="skill-tags">
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>GitHub Actions</span>
+        <span>Vercel</span>
+        <span>Vitest</span>
+        <span>Axios</span>
+        <span>Cheerio</span>
+        <span>Zod</span>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="projects" class="projects-section">
+        <p class="section-label">SELECTED WORK</p>
+        <h2>Projects I’ve built.</h2>
+        <p class="section-intro">
+            A selection of work that demonstrates my skills in web development,
+            responsive design, and full-stack problem solving.
         </p>
-    </section>
-    <section id="what-i-do">
-        <h2>What I Do</h2>
 
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Frontend Development</h3>
-                <p>I build responsive, modern, and user-friendly web interfaces using React, Next.js, HTML, and CSS.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Backend Development</h3>
-                <p>I create APIs and server-side applications using Node.js, Express.js, MongoDB, and REST APIs.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>AI & Data</h3>
-                <p>I explore artificial intelligence, machine learning, data analysis, and natural language processing.</p>
-            </div>
+        <div class="projects-grid">
+        <article class="project-card professional-project">
+        <div class="project-top">
+            <span class="project-number">01</span>
+            <span class="project-type">PERSONAL WEBSITE</span>
         </div>
-    </section>
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="top-skills">
-            <span>TypeScript</span>
-            <span>React.js</span>
+
+        <h3>Developer Portfolio</h3>
+        <p>
+            A responsive personal portfolio designed to present my skills,
+            projects, résumé, and professional contact information.
+        </p>
+
+        <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Responsive Design</span>
+        </div>
+
+        <a href="https://github.com/priyangshu06" target="_blank" rel="noopener">
+            View on GitHub <span>↗</span>
+        </a>
+        </article>
+
+        <article class="project-card professional-project project-coming-soon">
+            <div class="project-top">
+                <span class="project-number">02</span>
+                <span class="project-type">COMING SOON</span>
+            </div>
+
+        <h3>Your Next Project</h3>
+        <p>
+            Add a real project here when it is ready—such as an API,
+            dashboard, full-stack application, or AI-based tool.
+        </p>
+
+        <div class="project-tech">
             <span>Next.js</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
         </div>
-
-        <h3>Programming</h3>
-        <p>TypeScript · JavaScript · Python · Java · C · SQL · HTML · CSS</p>
-
-        <h3>Frontend</h3>
-        <p>React.js · Next.js · Tailwind CSS · Responsive Web Design</p>
-
-        <h3>Backend</h3>
-        <p>Node.js · Express.js · REST APIs · Mongoose · MongoDB</p>
-
-        <h3>AI / ML</h3>
-        <p>
-            Artificial Intelligence · Machine Learning · Generative AI ·
-            Natural Language Processing · Data Science · Data Analysis ·
-            Pandas · NumPy
-        </p>
-
-        <h3>Tools & Development</h3>
-        <p>
-            Git · GitHub · GitHub Actions · Vercel · Vitest · Axios ·
-            Cheerio · Zod
-        </p>
-
-        <h3>Additional</h3>
-        <p>
-            Full-Stack Development · MERN Stack · Web Development ·
-            API Development · Software Development · Web Scraping ·
-            Database Management
-        </p>
-    </section>
-    <<section id="projects">>
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>A personal website to introduce myself and showcase my work.</p>
-            <p class="tech-stack">HTML · CSS · Responsive Web Design</p>
-            <a href="https://github.com/priyangshu06" target="_blank" rel="noopener">
-                View on GitHub
-            </a>
-        </div>
-        <div class="project-card">
-            <h3>Future Project</h3>
-            <p>I will add my next project here.</p>
-            <p class="tech-stack">Coming soon</p>
-        </div>
+        </article>
+    </div>
     </section>
     <section class="cta">
-        <h2>Let’s build something great.</h2>
-        <p>Have an idea, project, or opportunity? I would love to hear from you.</p>
-        <a href="#contact">Get in touch</a>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out or connect with me.</p>
+  <div class="cta-content">
+    <p class="cta-kicker">
+      <span></span>
+      OPEN TO OPPORTUNITIES
+    </p>
 
-            <div class="social-links">
-                <a href="mailto:diptodebnath880@gmail.com">Email Me</a>
+    <h2>Let’s make something<br><em>that matters.</em></h2>
 
-                <a href="https://www.linkedin.com/in/priyangshu-debnath-792198264/"
-                   target="_blank" rel="noopener">
-                   LinkedIn
-                </a>
+    <p>
+      Have a role, project, or idea in mind? I’m always interested in
+      thoughtful software and meaningful collaborations.
+    </p>
 
-                <a href="https://github.com/priyangshu06"
-                   target="_blank" rel="noopener">
-                   GitHub
-                </a>
-            </div>
-    </section>
-    <footer>
-        <p>© 2026 Priyangshu. All rights reserved.</p>
-        <a href="#top">Back to top ↑</a>
-    </footer>
+    <div class="cta-actions">
+      <a class="cta-button" href="mailto:diptodebnath880@gmail.com">
+        Start a conversation <span>→</span>
+      </a>
+
+      <span class="cta-note">Based in India · Available remotely</span>
+    </div>
+  </div>
+
+  <div class="cta-visual">
+    <div class="cta-circle circle-one"></div>
+    <div class="cta-circle circle-two"></div>
+    <div class="cta-monogram">PD<span>.</span></div>
+  </div>
+</section>
+   <section id="contact" class="contact-section">
+  <div class="contact-main">
+    <p class="section-label">GET IN TOUCH</p>
+    <h2>Let’s build something<br><span>useful together.</span></h2>
+
+    <p>
+      I’m always open to discussing software development opportunities,
+      collaborations, and interesting projects.
+    </p>
+
+    <a class="contact-email" href="mailto:diptodebnath880@gmail.com">
+      diptodebnath880@gmail.com <span>↗</span>
+    </a>
+  </div>
+
+  <div class="contact-links-box">
+    <p>FIND ME ONLINE</p>
+
+    <a href="https://www.linkedin.com/in/priyangshu-debnath-792198264/"
+      target="_blank" rel="noopener">
+      LinkedIn <span>↗</span>
+    </a>
+
+    <a href="https://github.com/priyangshu06"
+      target="_blank" rel="noopener">
+      GitHub <span>↗</span>
+    </a>
+
+    <a href="resume.pdf" target="_blank">
+      View Résumé <span>↗</span>
+    </a>
+  </div>
+</section>
+    <footer class="site-footer">
+  <div class="footer-logo">PD<span>.</span></div>
+
+  <p>
+    Designed and built by Priyangshu Debnath.<br>
+    © 2026 All rights reserved.
+  </p>
+
+  <a href="#top">Back to top ↑</a>
+</footer>
 </body>
 </html>
