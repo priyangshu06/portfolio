@@ -17,6 +17,10 @@
 <body id="top">
     <nav class="navbar">
         <a class="logo" href="#top">PD<span>.</span></a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+        </button>
 
         <div class="nav-links">
             <a class="nav-item" href="#about">About</a>
@@ -56,6 +60,27 @@
             <div class="hero-badge">Open to work<br><span>2026</span></div>
         </div>
 </header>
+<section class="impact-strip reveal">
+  <div class="impact-item">
+    <strong>04</strong>
+    <span>Featured<br>Projects</span>
+  </div>
+
+  <div class="impact-item">
+    <strong>Full-Stack</strong>
+    <span>Web & Backend<br>Development</span>
+  </div>
+
+  <div class="impact-item">
+    <strong>AI / ML</strong>
+    <span>Generative AI &<br>Data Analysis</span>
+  </div>
+
+  <div class="impact-item">
+    <strong>2026</strong>
+    <span>CSE Graduate<br>MAKAUT</span>
+  </div>
+</section>
     <section id="about" class="about-section reveal">
   <div class="about-copy">
     <p class="section-label">ABOUT ME</p>
@@ -213,49 +238,206 @@
         </p>
 
         <div class="projects-grid">
-        <article class="project-card professional-project">
-        <div class="project-top">
-            <span class="project-number">01</span>
-            <span class="project-type">PERSONAL WEBSITE</span>
-        </div>
+        <article
+  class="project-card professional-project project-trigger"
+  data-dialog="portfolio-details"
+  tabindex="0"
+  role="button"
+  aria-label="Open Developer Portfolio project details"
+>
+  <div class="project-top">
+    <span class="project-number">01</span>
+    <span class="project-type">PERSONAL WEBSITE</span>
+  </div>
 
-        <h3>Developer Portfolio</h3>
-        <p>
-            A responsive personal portfolio designed to present my skills,
-            projects, résumé, and professional contact information.
-        </p>
+  <h3>Developer Portfolio</h3>
 
-        <div class="project-tech">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Responsive Design</span>
-        </div>
+  <p>
+    A responsive personal portfolio designed to present my skills,
+    projects, résumé, and professional contact information.
+  </p>
 
-        <a href="https://github.com/priyangshu06" target="_blank" rel="noopener">
-            View on GitHub <span>↗</span>
-        </a>
-        </article>
+  <div class="project-tech">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+  </div>
 
-        <article class="project-card professional-project project-coming-soon">
-            <div class="project-top">
-                <span class="project-number">02</span>
-                <span class="project-type">COMING SOON</span>
-            </div>
+  <span class="project-open">View project details <b>→</b></span>
+</article>
 
-        <h3>Your Next Project</h3>
-        <p>
-            Add a real project here when it is ready—such as an API,
-            dashboard, full-stack application, or AI-based tool.
-        </p>
+        <article class="project-card professional-project dynamic-project"
+  data-project="url-audit" tabindex="0" role="button">
+  <div class="project-top">
+    <span class="project-number">02</span>
+    <span class="project-type">BACKEND SERVICE</span>
+  </div>
+  <h3>URL Audit Service</h3>
+  <p>A backend-focused service for analyzing and validating web URLs.</p>
+  <div class="project-tech">
+    <span>TypeScript</span>
+    <span>Backend</span>
+    <span>URL Validation</span>
+  </div>
+  <span class="project-open">View project details <b>→</b></span>
+</article>
 
-        <div class="project-tech">
-            <span>Next.js</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-        </div>
-        </article>
+<article class="project-card professional-project dynamic-project"
+  data-project="translation" tabindex="0" role="button">
+  <div class="project-top">
+    <span class="project-number">03</span>
+    <span class="project-type">GENERATIVE AI</span>
+  </div>
+  <h3>Language Translation AI</h3>
+  <p>A real-time multilingual translation application powered by Generative AI.</p>
+  <div class="project-tech">
+    <span>Generative AI</span>
+    <span>NLP</span>
+    <span>Multilingual</span>
+  </div>
+  <span class="project-open">View project details <b>→</b></span>
+</article>
+
+<article class="project-card professional-project dynamic-project"
+  data-project="sales-analysis" tabindex="0" role="button">
+  <div class="project-top">
+    <span class="project-number">04</span>
+    <span class="project-type">AI / ML ANALYTICS</span>
+  </div>
+  <h3>Sales & Profit Analysis</h3>
+  <p>An AI/ML analytics application for finding sales and profit trends.</p>
+  <div class="project-tech">
+    <span>AI / ML</span>
+    <span>Data Analysis</span>
+    <span>Sales Insights</span>
+  </div>
+  <span class="project-open">View project details <b>→</b></span>
+</article>
+
+<article class="project-card professional-project dynamic-project"
+  data-project="ott-platform" tabindex="0" role="button">
+  <div class="project-top">
+    <span class="project-number">05</span>
+    <span class="project-type">FULL-STACK APP</span>
+  </div>
+  <h3>OTT Platform</h3>
+  <p>A MERN-stack streaming platform with authentication and subscriptions.</p>
+  <div class="project-tech">
+    <span>MERN Stack</span>
+    <span>Authentication</span>
+    <span>Video Playback</span>
+  </div>
+  <span class="project-open">View project details <b>→</b></span>
+</article>
     </div>
     </section>
+    <dialog class="project-dialog" id="portfolio-details">
+  <button class="dialog-close" aria-label="Close project details">×</button>
+
+  <p class="dialog-label">PROJECT 01 · PERSONAL WEBSITE</p>
+  <h2>Developer Portfolio</h2>
+
+  <p class="dialog-summary">
+    A responsive portfolio website that presents my technical skills,
+    projects, résumé, and professional links in one polished experience.
+  </p>
+
+  <div class="dialog-grid">
+    <div>
+      <h3>What I built</h3>
+      <ul>
+        <li>A responsive desktop and mobile layout</li>
+        <li>Interactive navigation and scroll animations</li>
+        <li>Projects, skills, résumé, and contact sections</li>
+        <li>GitHub Pages deployment</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Technology</h3>
+      <div class="dialog-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>GitHub Pages</span>
+      </div>
+    </div>
+  </div>
+
+  <a class="dialog-github" href="https://github.com/priyangshu06"
+    target="_blank" rel="noopener">
+    View on GitHub <span>↗</span>
+  </a>
+</dialog>
+<dialog class="project-dialog" id="work-details">
+  <button class="dialog-close" aria-label="Close project details">×</button>
+
+  <p class="dialog-label" id="detail-label"></p>
+  <h2 id="detail-title"></h2>
+  <p class="dialog-summary" id="detail-summary"></p>
+
+  <div class="dialog-grid">
+    <div>
+      <h3>Project details</h3>
+      <ul id="detail-list"></ul>
+    </div>
+
+    <div>
+      <h3>Technology</h3>
+      <div class="dialog-tech" id="detail-tech"></div>
+    </div>
+  </div>
+
+  <a class="dialog-github" href="https://github.com/priyangshu06"
+    target="_blank" rel="noopener">
+    Visit GitHub profile <span>↗</span>
+  </a>
+</dialog>
+
+<section id="journey" class="journey-section reveal">
+  <div class="journey-heading">
+    <p class="section-label">EDUCATION & LEARNING</p>
+    <h2>Building strong<br><span>technical foundations.</span></h2>
+  </div>
+
+  <div class="timeline">
+    <article class="timeline-item timeline-primary">
+      <div class="timeline-date">2022 — 2026</div>
+      <div>
+        <p class="timeline-type">EDUCATION</p>
+        <h3>B.Tech in Computer Science & Engineering</h3>
+        <p>Future Institute of Engineering and Management, MAKAUT</p>
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-date">Feb — Mar 2025</div>
+      <div>
+        <p class="timeline-type">CERTIFICATION</p>
+        <h3>Full-Stack Development using MERN Stack</h3>
+        <p>Ardent Computech Pvt. Ltd.</p>
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-date">Jul — Aug 2024</div>
+      <div>
+        <p class="timeline-type">CERTIFICATION</p>
+        <h3>Generative AI</h3>
+        <p>Ardent Computech Pvt. Ltd.</p>
+      </div>
+    </article>
+
+    <article class="timeline-item">
+      <div class="timeline-date">Dec 2023 — Mar 2024</div>
+      <div>
+        <p class="timeline-type">CERTIFICATION</p>
+        <h3>AI & Machine Learning</h3>
+        <p>Ardent Computech Pvt. Ltd.</p>
+      </div>
+    </article>
+  </div>
+</section>
     <section class="cta reveal">
   <div class="cta-content">
     <p class="cta-kicker">

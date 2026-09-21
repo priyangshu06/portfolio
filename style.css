@@ -1206,3 +1206,350 @@ body {
   border-radius: 50%;
   background: var(--primary);
 }
+.menu-toggle {
+  display: none;
+  width: 38px;
+  height: 38px;
+  padding: 9px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: 4px auto;
+  background: var(--dark);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 650px) {
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .navbar .nav-resume {
+    display: none;
+  }
+
+  .navbar .nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    flex-direction: column;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+  }
+
+  .navbar .nav-links.open {
+    display: flex;
+  }
+
+  .navbar .nav-links a {
+    padding: 11px 12px;
+    border-radius: 8px;
+  }
+
+  .navbar .nav-links a:hover {
+    background: #eff6ff;
+  }
+
+  .menu-toggle.open span:first-child {
+    transform: translateY(3px) rotate(45deg);
+  }
+
+  .menu-toggle.open span:last-child {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+}
+.project-trigger {
+  cursor: pointer;
+}
+
+.project-trigger:focus {
+  outline: 3px solid #93c5fd;
+  outline-offset: 4px;
+}
+
+.project-open {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.project-open b {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.project-trigger:hover .project-open b {
+  transform: translateX(5px);
+}
+
+.project-dialog {
+  width: min(720px, calc(100% - 32px));
+  padding: 42px;
+  color: var(--dark);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 25px 70px rgba(15, 23, 42, 0.28);
+}
+
+.project-dialog::backdrop {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.dialog-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  color: var(--dark);
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dialog-label {
+  margin: 0 0 12px;
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.project-dialog h2 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 48px);
+}
+
+.dialog-summary {
+  max-width: 600px;
+  margin: 18px 0 32px;
+  color: var(--text);
+  line-height: 1.75;
+}
+
+.dialog-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 22px;
+  padding: 24px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.dialog-grid h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+
+.dialog-grid ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.dialog-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dialog-tech span {
+  padding: 7px 10px;
+  color: #1d4ed8;
+  background: #dbeafe;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.dialog-github {
+  display: inline-block;
+  margin-top: 26px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  .project-dialog {
+    padding: 32px 22px;
+  }
+
+  .dialog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.dynamic-project {
+  cursor: pointer;
+}
+
+.dynamic-project:focus {
+  outline: 3px solid #93c5fd;
+  outline-offset: 4px;
+}
+
+.dynamic-project:hover .project-open b {
+  transform: translateX(5px);
+}
+.journey-section {
+  max-width: 1080px;
+  margin: 80px auto;
+  padding: 65px;
+  text-align: left;
+}
+
+.journey-heading h2 {
+  margin: 0 0 40px;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.08;
+}
+
+.journey-heading h2 span {
+  color: var(--primary);
+}
+
+.timeline {
+  border-top: 1px solid var(--border);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 35px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+  transition: 0.2s ease;
+}
+
+.timeline-item:hover {
+  padding-left: 12px;
+  background: #f8fafc;
+}
+
+.timeline-date {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.timeline-type {
+  margin: 0 0 7px;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.timeline-item h3 {
+  margin: 0 0 8px;
+  color: var(--dark);
+  font-size: 20px;
+}
+
+.timeline-item div:last-child > p:last-child {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.timeline-primary h3 {
+  color: var(--primary);
+}
+
+@media (max-width: 650px) {
+  .journey-section {
+    margin: 50px auto;
+    padding: 38px 22px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+.impact-strip {
+  max-width: 1080px;
+  margin: 0 auto 80px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.impact-item {
+  padding: 28px 24px;
+  border-right: 1px solid var(--border);
+}
+
+.impact-item:last-child {
+  border-right: none;
+}
+
+.impact-item strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--dark);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.impact-item:first-child strong,
+.impact-item:nth-child(3) strong {
+  color: var(--primary);
+}
+
+.impact-item span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .impact-strip {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto 50px;
+  }
+
+  .impact-item {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .impact-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .impact-item:nth-child(3),
+  .impact-item:nth-child(4) {
+    border-bottom: none;
+  }
+}
