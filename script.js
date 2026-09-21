@@ -153,3 +153,13 @@ dynamicProjectCards.forEach((card) => {
     }
   });
 });
+const progressBar = document.querySelector(".scroll-progress span");
+
+window.addEventListener("scroll", () => {
+  const pageHeight =
+    document.documentElement.scrollHeight - window.innerHeight;
+
+  const scrollPercent = (window.scrollY / pageHeight) * 100;
+
+  progressBar.style.width = `${scrollPercent}%`;
+});
