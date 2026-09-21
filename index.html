@@ -239,11 +239,23 @@
             A selection of work that demonstrates my skills in web development,
             responsive design, and full-stack problem solving.
         </p>
+        <div class="project-filters">
+            <button class="filter-button active" data-filter="all">All projects</button>
+            <button class="filter-button" data-filter="fullstack">Full Stack</button>
+            <button class="filter-button" data-filter="backend">Backend</button>
+            <button class="filter-button" data-filter="ai">AI / ML</button>
+        </div>
+        <div class="project-filters">
+  <button class="filter-button active" data-filter="all">All projects</button>
+  <button class="filter-button" data-filter="fullstack">Full Stack</button>
+  <button class="filter-button" data-filter="backend">Backend</button>
+  <button class="filter-button" data-filter="ai">AI / ML</button>
+</div>
 
         <div class="projects-grid">
-        <article
-  class="project-card professional-project project-trigger"
+        <article class="project-card professional-project project-trigger"
   data-dialog="portfolio-details"
+  data-category="frontend"
   tabindex="0"
   role="button"
   aria-label="Open Developer Portfolio project details"
@@ -270,7 +282,9 @@
 </article>
 
         <article class="project-card professional-project dynamic-project"
-  data-project="url-audit" tabindex="0" role="button">
+  data-project="url-audit"
+  data-category="backend"
+  tabindex="0" role="button">
   <div class="project-top">
     <span class="project-number">02</span>
     <span class="project-type">BACKEND SERVICE</span>
@@ -286,7 +300,9 @@
 </article>
 
 <article class="project-card professional-project dynamic-project"
-  data-project="translation" tabindex="0" role="button">
+  data-project="translation"
+  data-category="ai"
+  tabindex="0" role="button">
   <div class="project-top">
     <span class="project-number">03</span>
     <span class="project-type">GENERATIVE AI</span>
@@ -302,7 +318,9 @@
 </article>
 
 <article class="project-card professional-project dynamic-project"
-  data-project="sales-analysis" tabindex="0" role="button">
+  data-project="sales-analysis"
+  data-category="ai"
+  tabindex="0" role="button">
   <div class="project-top">
     <span class="project-number">04</span>
     <span class="project-type">AI / ML ANALYTICS</span>
@@ -318,7 +336,9 @@
 </article>
 
 <article class="project-card professional-project dynamic-project"
-  data-project="ott-platform" tabindex="0" role="button">
+  data-project="ott-platform"
+  data-category="fullstack"
+  tabindex="0" role="button">
   <div class="project-top">
     <span class="project-number">05</span>
     <span class="project-type">FULL-STACK APP</span>

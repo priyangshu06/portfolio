@@ -1570,3 +1570,28 @@ body {
   background: linear-gradient(90deg, #2563eb, #60a5fa);
   transition: width 0.1s linear;
 }
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 28px;
+}
+
+.filter-button {
+  padding: 8px 13px;
+  color: #475569;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  color: white;
+  background: var(--dark);
+  border-color: var(--dark);
+}

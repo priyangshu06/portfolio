@@ -163,3 +163,23 @@ window.addEventListener("scroll", () => {
 
   progressBar.style.width = `${scrollPercent}%`;
 });
+const filterButtons = document.querySelectorAll(".filter-button");
+const allProjectCards = document.querySelectorAll(
+  "#projects .professional-project"
+);
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+
+    filterButtons.forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+
+    allProjectCards.forEach((card) => {
+      const shouldShow =
+        filter === "all" || card.dataset.category === filter;
+
+      card.hidden = !shouldShow;
+    });
+  });
+});
